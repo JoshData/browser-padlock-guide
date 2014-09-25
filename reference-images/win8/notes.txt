@@ -4,11 +4,11 @@ IE 8    	captured
 IE 9    	captured
 IE 10    	captured
 Chrome <=10	not tested
-Chrome 11-35	look like 35
+Chrome 11-37	look like 35
 Firefox 1-3	not tested
 Firefox 4-5	looks like 4
 Firefox 8-13	looks like 8
-firefox 14-32	looks like 16, 32
+Firefox 14-32	looks like 16, 32
 Safari 3	captured
 Safari 4	captured
 Safari 5	captured

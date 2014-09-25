@@ -3,9 +3,9 @@ jQuery.fn.extend({
 	padlock: function(options) {
 		function detect_browser() {
 			if (bowser.chrome)
-				return "chrome";
+				return "chrome35";
 			if (bowser.firefox)
-				return "firefox";
+				return "firefox32";
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -67,7 +67,7 @@ jQuery.fn.extend({
 
 			elem.find('.padlock-box').addClass('padlock-browser-' + browser)
 			if (evIdentity) {
-				if (browser == "firefox") {
+				if (browser == "firefox32") {
 					// Expect the country code in brackets at the end, but for Firefox
 					// display it with parens.
 					evIdentity = evIdentity.replace(/\[(..)\]$/, "($1)")
@@ -80,13 +80,13 @@ jQuery.fn.extend({
 			// instructions
 
 			var inx;
-			if (browser == "chrome" && !evIdentity)
+			if (browser == "chrome35" && !evIdentity)
 				inx = "Look for a green lock and “DOMAIN” in dark text.";
-			else if (browser == "chrome" && evIdentity)
+			else if (browser == "chrome35" && evIdentity)
 				inx = "Look for a green lock, the company name, and “DOMAIN” in dark text.";
-			else if (browser == "firefox" && !evIdentity)
+			else if (browser == "firefox32" && !evIdentity)
 				inx = "Look for a lock and “DOMAIN” in dark text.";
-			else if (browser == "firefox" && evIdentity)
+			else if (browser == "firefox32" && evIdentity)
 				inx = "Look for a green lock, the company name, and “DOMAIN” in dark text.";
 			else
 				inx = "This example is approximate. Look for a lock icon and “DOMAIN.”"

@@ -41,6 +41,10 @@
           td {
             font-size: 14px;
           }
+
+          .padlock {
+            margin-bottom: 1em;
+          }
         </style>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
@@ -88,7 +92,7 @@
               <tbody>
                 <tr>
                   <td><code>data-padlock-browser</code> or <br><code>{ browser: "..." }</code></td>
-                  <td><code>chrome</code> or <code>firefox</code> or <code>unknown</code>. Defaults to autodetecting your browser.</td>
+                  <td>A browser code from the table below. Defaults to autodetecting your browser.</td>
                 </tr>
                 <tr>
                   <td><code>data-padlock-domain</code> or <br><code>{ domain: "..." }</code></td>
@@ -105,35 +109,39 @@
               </tbody>
             </table>
 
-            <h3>supported browsers</h3>
+            <h3>browser codes</h3>
 
-            <p>Submit a pull request to add more!</p>
+            <p>The following browsers are supported. Each browser code is tested to render properly in  that particular browser version and in the latest version. Submit a pull request to add more!</p>
+
+            <table class="table">
+              <thead>
+                <th>Code</th>
+                <th>Browser</th>
+                <th>Versions</th>
+              </thead>
+              <tbody>
+                <tr><td><code>chome35</code></td> <td>Google Chrome</td><td>11-37</td></tr>
+                <tr><td><code>firefox32</code></td> <td>Mozilla Firefox</td><td>14-32</td></tr>
+              </tbody>
+            </table>
 
           </div>
 
           <div class="col-md-6">
             <h3>autodetecting your browser</h3>
             <div class="padlock"> </div>
-
-            <h3>your browser w/ ev cert</h3>
             <div class="padlock" data-padlock-ev-identity="Example LLC [XX]"> </div>
 
-            <h3>chrome</h3>
-            <div class="padlock" data-padlock-browser="chrome"> </div>
+            <h3>chrome 11-37</h3>
+            <div class="padlock" data-padlock-browser="chrome35"> </div>
+            <div class="padlock" data-padlock-browser="chrome35" data-padlock-ev-identity="Example LLC [XX]"> </div>
 
-            <h3>chrome w/ ev cert</h3>
-            <div class="padlock" data-padlock-browser="chrome" data-padlock-ev-identity="Example LLC [XX]"> </div>
-
-            <h3>firefox</h3>
-            <div class="padlock" data-padlock-browser="firefox"> </div>
-
-            <h3>firefox w/ ev cert</h3>
-            <div class="padlock" data-padlock-browser="firefox" data-padlock-ev-identity="Example LLC [XX]"> </div>
+            <h3>firefox 14-32</h3>
+            <div class="padlock" data-padlock-browser="firefox32"> </div>
+            <div class="padlock" data-padlock-browser="firefox32" data-padlock-ev-identity="Example LLC [XX]"> </div>
 
             <h3>unrecognized browser</h3>
             <div class="padlock" data-padlock-browser="unknown"> </div>
-
-            <h3>unrecognized browser w/ ev cert</h3>
             <div class="padlock" data-padlock-browser="unknown" data-padlock-ev-identity="Example LLC [XX]"> </div>
           </div>
         </div>

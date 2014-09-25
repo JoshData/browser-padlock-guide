@@ -7,7 +7,7 @@
 	font-size: 13px;
 }
 
-.padlock-browser-chrome, .padlock-browser-unknown {
+.padlock-browser-chrome35, .padlock-browser-unknown {
 	border-top: 1px solid #a3a2a2;
 	border-right: 1px solid #c5c4c3;
 	border-bottom: 1px solid #c5c4c3;
@@ -19,10 +19,10 @@
 	font-family: Arial, sans-serif;
 	line-height: 130%;
 }
-	.padlock-browser-chrome.padlock-cert-ev, .padlock-browser-unknown.padlock-cert-ev {
+	.padlock-browser-chrome35.padlock-cert-ev, .padlock-browser-unknown.padlock-cert-ev {
 		padding: 1px;
 	}
-	.padlock-browser-chrome.padlock-cert-ev .padlock-icon-container, .padlock-browser-unknown.padlock-cert-ev .padlock-icon-container {
+	.padlock-browser-chrome35.padlock-cert-ev .padlock-icon-container, .padlock-browser-unknown.padlock-cert-ev .padlock-icon-container {
 		float: left;
 		border: 1px solid #81b781;
 		background: url(data:image/gif;base64,R0lGODdhAQAVAIQVAMbpxsfqx8nrycvry83szc/tztHu0dTv09bw1tnx2dvy29303eD04OL14uX35eb35uj46Or46uz57PL78vv++////////////////////////////////////////////ywAAAAAAQAVAAAFEiA1SRH0OA2zKAlyGAUxCAEQAgA7);
@@ -32,33 +32,33 @@
 		margin-right: 4px;
 		line-height: 21px;
 	}
-	.padlock-browser-chrome .padlock-icon, .padlock-browser-unknown .padlock-icon {
+	.padlock-browser-chrome35 .padlock-icon, .padlock-browser-unknown .padlock-icon {
 		float: left;
 		margin-right: 5px;
 		width: 13px;
 		height: 19px;
 		background-image: url(data:image/gif;base64,R0lGODlhDQATAKUsAFGNO1OPPVWSP4GBgVeVQVmXQ4WFhVuaRV2dR4uLi1+fSWChSZGRkXGjXXKjXpubm6KiooS2cp3bcqPieKzei6vgiNLS0tPT06rpf7DmjbjjndfX19jY2LDvhdra2rbsk9vb29/f37vxmLb0jMD2ndnr0dvs0+rq6s/6suby4Nb7vfDw8P///////////////////////////////////////////////////////////////////////////////yH5BAEKAD8ALAAAAAANABMAAAaIwJ9wSCwajz8QJDFIQDzFDeNyWp0ujA3xcQkNviHLg2gADYYDkIE42JyF7TecIx/Qh5GFfr+PCBUqKIKDKCoKQggkI4uMIyQIQgciHZSVHSIHQgUfGJ2eGB8FQgQZE6anExkEQgIVEq+wEhUCQgEaFLi5FBoBQg4AwMHBDUIpJiXIySUmKUhGQQA7);
 	}	
-	.padlock-browser-chrome .padlock-icon-ev-identity, .padlock-browser-unknown .padlock-icon-ev-identity {
+	.padlock-browser-chrome35 .padlock-icon-ev-identity, .padlock-browser-unknown .padlock-icon-ev-identity {
 		float: left;
 	}
-	.padlock-browser-chrome.padlock-cert-ev .padlock-url, .padlock-browser-unknown.padlock-cert-ev .padlock-url {
+	.padlock-browser-chrome35.padlock-cert-ev .padlock-url, .padlock-browser-unknown.padlock-cert-ev .padlock-url {
 		padding-top: 2px;
 	}
-	.padlock-browser-chrome .padlock-url-scheme, .padlock-browser-unknown .padlock-url-scheme {
+	.padlock-browser-chrome35 .padlock-url-scheme, .padlock-browser-unknown .padlock-url-scheme {
 		color: #079500;
 	}
-	.padlock-browser-chrome .padlock-url-colonslashslash, .padlock-browser-unknown .padlock-url-colonslashslash {
+	.padlock-browser-chrome35 .padlock-url-colonslashslash, .padlock-browser-unknown .padlock-url-colonslashslash {
 		color: #9d9da9;
 	}
-	.padlock-browser-chrome .padlock-url-domain, .padlock-browser-unknown .padlock-url-domain {
+	.padlock-browser-chrome35 .padlock-url-domain, .padlock-browser-unknown .padlock-url-domain {
 		color: black;
 	}
-	.padlock-browser-chrome .padlock-url-path, .padlock-browser-unknown .padlock-url-path {
+	.padlock-browser-chrome35 .padlock-url-path, .padlock-browser-unknown .padlock-url-path {
 		color: #9d9da9;
 	}
 
-.padlock-browser-firefox {
+.padlock-browser-firefox32 {
 	border: 1px solid #b2aeaa;
 	background-color: white;
 	padding: 3px 4px 2px 4px;
@@ -66,10 +66,10 @@
 	font-family: Arial, sans-serif;
 	line-height: 130%;
 }
-	.padlock-browser-firefox.padlock-cert-ev {
+	.padlock-browser-firefox32.padlock-cert-ev {
 		padding: 0;
 	}
-	.padlock-browser-firefox.padlock-cert-ev .padlock-icon-container {
+	.padlock-browser-firefox32.padlock-cert-ev .padlock-icon-container {
 		float: left;
 		border-right: 1px solid #d4dbcd;
 		padding: 2px 4px 2px 4px;
@@ -78,7 +78,7 @@
 		margin-right: 4px;
 		line-height: 21px;
 	}
-	.padlock-browser-firefox .padlock-icon {
+	.padlock-browser-firefox32 .padlock-icon {
 		float: left;
 		margin-top: 1px;
 		margin-right: 5px;
@@ -86,26 +86,26 @@
 		height: 14px;
 		background-image: url(data:image/gif;base64,R0lGODdhDAAOAIQWAHV1dXd3d3t7e35+foKCgoaGhoqKio6OjpGRkZSUlJWVlZaWlpeXl52dnZ6enqWlpbKysra2trm5ue/v7/Dw8PT09P///////////////////////////////////////ywAAAAADAAOAAAFR6AljmRJSY4jUeXUMDDTTGSUQFUFJRHJIBVRBbEgHQ5GpOhhaDqbD1FhSq2KCNisVjToer8igXhMFgXO6LRIAWi724mSXBQCADs=);
 	}	
-	.padlock-browser-firefox.padlock-cert-ev .padlock-icon {
+	.padlock-browser-firefox32.padlock-cert-ev .padlock-icon {
 		margin-top: 3px;
 		background-image: url(data:image/gif;base64,R0lGODdhDAAOAIQYAGelKWinKWmpKGqsKGyvKG2yKG+2KHC5J3G8J3O+J3TAJ3e/MXi/Moq5Woq6W3zDNHvFMpDHWpvQZKDSbKDVbOn13er23/H46f///////////////////////////////ywAAAAADAAOAAAFRyAmjmRpURBEWWX1KLDyVOSUSNclJRPJIBfRBbEgHQ5GpChiaDqbEVFhSq2KCNisVjToer8igXhMFgXO6LTIAWi7242SXBQCADs=);
 	}	
-	.padlock-browser-firefox .padlock-icon-ev-identity {
+	.padlock-browser-firefox32 .padlock-icon-ev-identity {
 		float: left;
 		font-size: 12px;
 	}
-	.padlock-browser-firefox.padlock-cert-ev .padlock-url {
+	.padlock-browser-firefox32.padlock-cert-ev .padlock-url {
 		padding: 3px 4px 2px 4px;
 	}
-	.padlock-browser-firefox .padlock-url-scheme {
+	.padlock-browser-firefox32 .padlock-url-scheme {
 		color: #aaa;
 	}
-	.padlock-browser-firefox .padlock-url-colonslashslash {
+	.padlock-browser-firefox32 .padlock-url-colonslashslash {
 		color: #aaa;
 	}
-	.padlock-browser-firefox .padlock-url-domain {
+	.padlock-browser-firefox32 .padlock-url-domain {
 		color: black;
 	}
-	.padlock-browser-firefox .padlock-url-path {
+	.padlock-browser-firefox32 .padlock-url-path {
 		color: #aaa;
 	}	
