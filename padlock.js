@@ -4,18 +4,25 @@ jQuery.fn.extend({
 		function detect_browser() {
 			if (bowser.chrome)
 				return "chrome35";
+
 			if (bowser.firefox && parseInt(bowser.version) >= 14)
 				return "firefox32";
 			if (bowser.firefox) // actually only valid >= 8
 				return "firefox8";
+
 			if (bowser.msie && parseInt(bowser.version) >= 9)
 				return "ie9";
 			if (bowser.msie && parseInt(bowser.version) == 8)
 				return "ie8";
 			if (bowser.msie && parseInt(bowser.version) == 7)
 				return "ie7";
+
 			if (bowser.opera && parseInt(bowser.version) >= 15)
 				return "opera15";
+
+			if (bowser.safari) // actually only valid for 4-5
+				return "safari5";
+
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -98,6 +105,7 @@ jQuery.fn.extend({
 				inx = "Look for a <span>green lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "chrome35" && evIdentity)
 				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";
+			
 			else if (browser == "firefox32" && !evIdentity)
 				inx = "Look for a <span>lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "firefox32" && evIdentity)
@@ -106,6 +114,7 @@ jQuery.fn.extend({
 				inx = "Look for “DOMAIN” in <span>blue</span> on the left and then again in <span>dark text</span> on the right.";
 			else if (browser == "firefox8" && evIdentity)
 				inx = "Look for the <span>company name</span> in <span>green</span> and “DOMAIN” in <span>dark text</span>.";
+			
 			else if (browser == "ie9" && !evIdentity)
 				inx = "Look for a <span>blue bar</span>, “DOMAIN” in <span>dark text</span>, and a <span>lock</span> on the right.";
 			else if (browser == "ie9" && evIdentity)
@@ -118,10 +127,17 @@ jQuery.fn.extend({
 				inx = "Look for a <span>blue bar</span> and a <span>lock</span> on the right.";
 			else if (browser == "ie7" && evIdentity)
 				inx = "Look for a <span>green bar</span> and the <span>company name</span> and a <span>lock</span> on the right.";
+			
 			else if (browser == "opera15" && !evIdentity)
 				inx = "Look for a <span>green lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "opera15" && evIdentity)
 				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";
+			
+			else if (browser == "safari5" && !evIdentity)
+				inx = "Look for a <span>lock</span> on the right.";
+			else if (browser == "safari5" && evIdentity)
+				inx = "Look for the <span>company name</span> and a <span>lock</span> both on the right.";
+
 			else
 				inx = "This example is approximate. Look for a <span>lock</span> icon and “DOMAIN.”"
 

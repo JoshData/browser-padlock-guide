@@ -361,3 +361,46 @@
 	.padlock-browser-opera15 .padlock-url-path {
 		color: #aaa;
 	}
+
+.padlock-browser-safari5 {
+	border: 1px solid #98a0ab;
+	border-radius: 3px;
+	font-size: 15px;
+	padding: 1px;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+	.padlock-browser-safari5 .padlock-document-icon {
+		float: left;
+		margin: 5px 2px 0 2px;
+		width: 22px;
+		height: 15px;
+		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
+	}	
+	.padlock-browser-safari5 .padlock-icon-container {
+		float: right;
+	}	
+	.padlock-browser-safari5 .padlock-icon {
+		float: right;
+		margin-top: 5px;
+		margin-right: 3px;
+		width: 11px;
+		height: 12px;
+		background-image: url(data:image/gif;base64,R0lGODlhCwAMAIQcAFNTU1dXV1tbW11dXV9fX2BgYGdnZ2pqamtra21tbXBwcHJycoGBgYaGhoeHh4qKioyMjI2NjZCQkJKSkqWlpaioqKysrLCwsLS0tLa2tre3t+np6f///////////////yH5BAEKAB8ALAAAAAALAAwAAAU7ICeOZKkFWSle1EZVajEK6jDapKUUAKFYJMLDwXA8CKSDZMKUHEgGCCQiNZAKjaGjIRthEoswAqMqhwAAOw==);
+	}	
+	.padlock-browser-safari5 .padlock-icon-identity {
+		display: none;
+	}	
+	.padlock-browser-safari5 .padlock-url {
+		float: left;
+		padding: 3px 5px 2px 5px;
+	}
+	.padlock-browser-safari5.padlock-cert-ev .padlock-icon-identity {
+		display: block;
+		float: left;
+		margin-top: 2px;
+		padding-right: 3px;
+		color: #006318;
+		font-size: 85%;
+		font-weight: bold;
+	}
