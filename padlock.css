@@ -190,9 +190,11 @@
 	}	
 	.padlock-browser-ie9 .padlock-icon {
 		float: left;
-		width: 20px;
-		height: 20px;
-		background-image: url(data:image/gif;base64,R0lGODlhFAAWAIQaAGhvdGpwdmtxd2xzeW92fHF4fnR7gXR8gnmAh4mSmo6Yn5OdpZSeppegqJiiqqKttaiyu6+6w77K1MDM1sLO2cXR3MnW4crX4s7c59He6f///////////////////////yH5BAEKAB8ALAAAAAAUABYAAAVhYCaOZGmeaJpJCwIAhkKp2TS8OFBUagIQEQsGcmOoCoAI6QE4qF4WEgUQeAIupMvLih1pASiHIEcGCBqmQLlcLa3Xpnc5Ls/R61s3Pk/a80d+YCVqeG0kDWNyAWg0jY4mIQA7);
+		margin-top: 2px;
+		margin-right: 4px;
+		width: 15px;
+		height: 16px;
+		background-image: url(data:image/gif;base64,R0lGODlhDwAQAIQWAGRqb2VrcGZscWZscmduc2hudGhvdGpxdmpxd2xzeHN6gHyFi3+HjX+IjoSMk5miqpqkrJ2osKCpsqWvuKawuamzvP///////////////////////////////////////yH5BAEKAB8ALAAAAAAPABAAAAU94CeOZElOTkIcjDkuAfVJQON+RjVGyG2UP1dwNBxBCoak0lB4kATL6IAUrVKryys2qd12sSTF1qC4mc+lEAA7);
 	}	
 	.padlock-browser-ie9 .padlock-icon-identity {
 		display: none;
@@ -222,9 +224,6 @@
 		margin-top: 3px;
 		padding-right: 3px;
 	}
-	.padlock-browser-ie9.padlock-cert-ev .padlock-icon {
-		background-image: url(data:image/gif;base64,R0lGODlhFAAWAIQaAEZqRkdrRkhtSEluSEpwSUxzS052TU53TlF7UF2NXGCSX2OWY2SXY2aaZWebZm2lbXGscHWydIDCf4HDgIPGgoXIg4fNhonPh4vSio3VjP///////////////////////yH5BAEKAB8ALAAAAAAUABYAAAVhYCaOZGmeaJpJCwIAhkKp2TS8OFBUagIQEQsGcmOoCoAI6QE4qF4WEgUQeAIupMvLih1pASiHIEcGCBqmQLlcLa3Xpnc5Ls/R61s3Pk/a80d+YCVqeG0kDWNyAWg0jY4mIQA7);
-	}	
 
 .padlock-browser-ie8 {
 }
@@ -234,9 +233,10 @@
 	.padlock-browser-ie8 .padlock-icon {
 		float: left;
 		margin-top: 1px;
-		width: 20px;
-		height: 22px;
-		background-image: url(data:image/gif;base64,R0lGODlhEwAZAOeHAE83AFg+AGdHAGlKAGxNAG1NAG9OAHBPAHNRAHRTAHRUAHdUAHlWAHlXAH1WAHxZAH1ZAH1aAH9aAIFaAH5bAIBbAIFbAIBcAIBdAIJdAINdAIBeAIRdAIVeAIZfAIVgAIZgAIdgAIdhAIhiAIxiAIhkAIlkAIpkAIxkAIxlAI1lAIxmAI1mAI5mAJBnAI9oAJBoAJFoAI9pAJFpAJJpAJNpAJVqAJNrAJRrAJVrAJZrAJZsAJVtAJdtAJhtAJduAJhuAJluAJpuAJhvAJlvAJpvAJxxAJ1xAJ1yAJ5yAJ9yAJ1zAJ5zAJ9zAKB0AKF0AKB1AKF1AKJ1AKN1AKF2AKR2AKN3AKV3AKN4AKV4AKV5AKd6AKh6AKl6AKl7AKp7AKp9AK19AK59AK1+AK5+AK9/ALF/AK+AALGAALGBALWCALODALSDALWEALWFALiFALeGALmGAL2IAL2KALqLAL6LAL+LAMKNAMKPAMOPAMSPAMaQAMiSAMeTAMmTAMqTAM2VAMuWANCWANKZANWbANKcANScAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAP8ALAAAAAATABkAAAj+AP8JHEiwoMGDCBGaEPLPS4sECQkigHHhnwgABiL+I9CiYAAdEV9QKeiARsQZBjcAicjD4IgXEZcYXAFTY8EUNzQ+MCjzYI4TGST0EEKkiYwINru0KfIkyo4BBQ7UMFiIoI0pYMLsgHIEhYeCegIJVJPFChEWNLAE2aGkICFBgP518WEkyZQvd7ZowEAQjhw+As8wAaJCQ4ccOHqsIEhnz508/8g40dLlSpc5a1woIOjmzR+BX3DA4AChgg8aM1AUxFPHzj8zU6pcmSKlTJokDQh+WONnkCEuJEJomGChSJMeJQwuQNLnDxs0XY7MGAInDoiEFDKgiPEjiZgxDGwHDhwgQLzGgAA7);
+		margin-right: 4px;
+		width: 14px;
+		height: 17px;
+		background-image: url(data:image/gif;base64,R0lGODlhDgARAMZvAGNMGH9jIo1tHotuKJBwIJd2Iph2JJ17JaKBK6KBLaSCKaKCMaOFOaeGMauJNaqKNqyKMq6LNa2MN66MN62NOqyNP6eOS6OOV7COObGQO6qSU6eSXayTULWTObWTPbWUPLWUP7GVSa2VVraVPrWVRq6WVq+WVreWQauXZLGXV7SYTrKYVLKZV7eZSa6ZZLiZTLaaULWaVbuaRLmbTbWbW72bRbycRrydTcCeSbefYsCfSrqfXrqgWsKiSr2lZcWlT8emTsOnW7mnecSsbMGvhtGxWcizgNO2adO3bdi3Ytq5YNW5b9K6fda6dNa8cty8Zdy8aNC+jtm/dd+/atfAfcLBt9rAe8vGs9rHl+LIf97IjebIeOLJgObJetzJmObKfN/Ll+jLfujPiOzRievSju7Wmdrb09vc1N7c0vPcnt7e2N/i4+Dk5eHl5ebq7P///////////////////////////////////////////////////////////////////yH5BAEKAH8ALAAAAAAOABEAAAePgH+Cg4SFhD5gKxeGgygMLjkARIxqBYQHboZmIYQSbIZoQ4QIbYZnWIQqa4VRIikcMB8sXleFZGVMRy8yCwEDRoRZX2laNzYtQTM7hFxhW0gQIzVJIBqEUlBiVh0YCSceJoROT2NNCgYCDg00hFRKU0sRGRM6PRaFQj9dQDgUD0UVGG0gUCIGCR5VGCn8EwgAOw==);
 	}	
 	.padlock-browser-ie8 .padlock-icon-identity {
 		display: none;
