@@ -10,6 +10,10 @@ jQuery.fn.extend({
 				return "firefox8";
 			if (bowser.msie && parseInt(bowser.version) >= 9)
 				return "ie9";
+			if (bowser.msie && parseInt(bowser.version) == 8)
+				return "ie8";
+			if (bowser.msie && parseInt(bowser.version) == 7)
+				return "ie7";
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -104,6 +108,14 @@ jQuery.fn.extend({
 				inx = "Look for a <span>blue bar</span>, “DOMAIN” in <span>dark text</span>, and a <span>lock</span> on the right.";
 			else if (browser == "ie9" && evIdentity)
 				inx = "Look for a <span>green bar</span>, “DOMAIN” in <span>dark text</span>, and the <span>company name</span> and a <span>lock</span> on the right.";
+			else if (browser == "ie8" && !evIdentity)
+				inx = "Look for a <span>blue bar</span>, “DOMAIN” in <span>dark text</span>, and a <span>lock</span> on the right.";
+			else if (browser == "ie8" && evIdentity)
+				inx = "Look for a <span>green bar</span>, “DOMAIN” in <span>dark text</span>, and the <span>company name</span> and a <span>lock</span> on the right.";
+			else if (browser == "ie7" && !evIdentity)
+				inx = "Look for a <span>blue bar</span> and a <span>lock</span> on the right.";
+			else if (browser == "ie7" && evIdentity)
+				inx = "Look for a <span>green bar</span> and the <span>company name</span> and a <span>lock</span> on the right.";
 			else
 				inx = "This example is approximate. Look for a <span>lock</span> icon and “DOMAIN.”"
 

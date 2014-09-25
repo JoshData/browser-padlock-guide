@@ -225,3 +225,100 @@
 		background-image: url(data:image/gif;base64,R0lGODlhFAAWAIQaAEZqRkdrRkhtSEluSEpwSUxzS052TU53TlF7UF2NXGCSX2OWY2SXY2aaZWebZm2lbXGscHWydIDCf4HDgIPGgoXIg4fNhonPh4vSio3VjP///////////////////////yH5BAEKAB8ALAAAAAAUABYAAAVhYCaOZGmeaJpJCwIAhkKp2TS8OFBUagIQEQsGcmOoCoAI6QE4qF4WEgUQeAIupMvLih1pASiHIEcGCBqmQLlcLa3Xpnc5Ls/R61s3Pk/a80d+YCVqeG0kDWNyAWg0jY4mIQA7);
 	}	
 
+.padlock-browser-ie8 {
+	border: 1px solid #6989a4;
+	background-color: #dbe5ee;
+	font-size: 15px;
+	padding: 2px;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+	.padlock-browser-ie8 .padlock-document-icon {
+		float: left;
+		margin: 5px 2px 0 2px;
+		width: 22px;
+		height: 15px;
+		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
+	}	
+	.padlock-browser-ie8 .padlock-icon-container {
+		float: right;
+	}	
+	.padlock-browser-ie8 .padlock-icon {
+		float: left;
+		margin-top: 1px;
+		width: 20px;
+		height: 22px;
+		background-image: url(data:image/gif;base64,R0lGODlhEwAZAOeHAE83AFg+AGdHAGlKAGxNAG1NAG9OAHBPAHNRAHRTAHRUAHdUAHlWAHlXAH1WAHxZAH1ZAH1aAH9aAIFaAH5bAIBbAIFbAIBcAIBdAIJdAINdAIBeAIRdAIVeAIZfAIVgAIZgAIdgAIdhAIhiAIxiAIhkAIlkAIpkAIxkAIxlAI1lAIxmAI1mAI5mAJBnAI9oAJBoAJFoAI9pAJFpAJJpAJNpAJVqAJNrAJRrAJVrAJZrAJZsAJVtAJdtAJhtAJduAJhuAJluAJpuAJhvAJlvAJpvAJxxAJ1xAJ1yAJ5yAJ9yAJ1zAJ5zAJ9zAKB0AKF0AKB1AKF1AKJ1AKN1AKF2AKR2AKN3AKV3AKN4AKV4AKV5AKd6AKh6AKl6AKl7AKp7AKp9AK19AK59AK1+AK5+AK9/ALF/AK+AALGAALGBALWCALODALSDALWEALWFALiFALeGALmGAL2IAL2KALqLAL6LAL+LAMKNAMKPAMOPAMSPAMaQAMiSAMeTAMmTAMqTAM2VAMuWANCWANKZANWbANKcANScAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAP8ALAAAAAATABkAAAj+AP8JHEiwoMGDCBGaEPLPS4sECQkigHHhnwgABiL+I9CiYAAdEV9QKeiARsQZBjcAicjD4IgXEZcYXAFTY8EUNzQ+MCjzYI4TGST0EEKkiYwINru0KfIkyo4BBQ7UMFiIoI0pYMLsgHIEhYeCegIJVJPFChEWNLAE2aGkICFBgP518WEkyZQvd7ZowEAQjhw+As8wAaJCQ4ccOHqsIEhnz508/8g40dLlSpc5a1woIOjmzR+BX3DA4AChgg8aM1AUxFPHzj8zU6pcmSKlTJokDQh+WONnkCEuJEJomGChSJMeJQwuQNLnDxs0XY7MGAInDoiEFDKgiPEjiZgxDGwHDhwgQLzGgAA7);
+	}	
+	.padlock-browser-ie8 .padlock-icon-identity {
+		display: none;
+	}	
+	.padlock-browser-ie8 .padlock-url {
+		float: left;
+		padding: 3px 5px 2px 5px;
+	}
+	.padlock-browser-ie8 .padlock-url-scheme {
+		color: black;
+	}
+	.padlock-browser-ie8 .padlock-url-colonslashslash {
+		color: #93999d;
+	}
+	.padlock-browser-ie8 .padlock-url-domain {
+		color: black;
+	}
+	.padlock-browser-ie8 .padlock-url-path {
+		color: #93999d;
+	}
+	.padlock-browser-ie8.padlock-cert-ev {
+		background-color: #8ed68d;
+	}
+	.padlock-browser-ie8.padlock-cert-ev .padlock-icon-identity {
+		display: block;
+		float: left;
+		margin-top: 2px;
+		padding-right: 3px;
+	}
+
+.padlock-browser-ie7 {
+	border: 1px solid #6989a4;
+	background-color: #dbe5ee;
+	font-size: 15px;
+	padding: 2px;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+	.padlock-browser-ie7 .padlock-document-icon {
+		float: left;
+		margin: 5px 2px 0 2px;
+		width: 22px;
+		height: 15px;
+		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
+	}	
+	.padlock-browser-ie7 .padlock-icon-container {
+		float: right;
+	}	
+	.padlock-browser-ie7 .padlock-icon {
+		float: left;
+		margin-top: 3px;
+		margin-right: 3px;
+		width: 16px;
+		height: 18px;
+		background-image: url(data:image/gif;base64,R0lGODlhEAASAMZLAI9yRpJzRZN0RI91UqZ3AJF2U5B2Vqd4ApF3VZJ3VZJ5UZt5PZt6Q5d7UJd8TZh8Uph9WpiAVZuDXJaJWqmJR5mOX7mMFr6RG66TWMKVH8SXIaqXesaZI66ZdMeaJMmcJ8ueKdidD8yfKs2gK9GkL9KlMNSnMtaqNNerMtmsMtquOJm7hNKwTdywOtyxM8mxbOG0M+C0PuS4QuW5Q+W6ROa7Ree8Rui9R+m+SOq/SevASt3CauzBS9/Dau3CTPDFUOPHbPHGUebIY+jIY+jJZOTLcvXLVf3TXf/VX//VY//WZ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAH8ALAAAAAAQABIAAAeggH+Cg4SFhisVCQMFEyuGgisPPUU7LCEPjoYTQC8dGxguIROPEUISgxQwEI8PRAiDASkLrK6wso8NQwaDAigMhQQEDsPBBAoOAMGDOjpGPz45SjEj1DEEgyYmJSQjIC0WB+EX14LMQTw5OEnT1eR/2SIgHx4q4OLuzD43NjVI7CPWsJngwEFDhhP2DoxbpgMHjRkyjvwLKKiYxYvuHj0KBAA7);
+	}	
+	.padlock-browser-ie7 .padlock-icon-identity {
+		display: none;
+	}	
+	.padlock-browser-ie7 .padlock-url {
+		float: left;
+		padding: 3px 5px 2px 5px;
+	}
+	.padlock-browser-ie7.padlock-cert-ev {
+		background-color: #8ed68d;
+	}
+	.padlock-browser-ie7.padlock-cert-ev .padlock-icon-identity {
+		display: block;
+		float: left;
+		margin-top: 2px;
+		padding-right: 3px;
+	}
+
