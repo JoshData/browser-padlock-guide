@@ -14,6 +14,8 @@ jQuery.fn.extend({
 				return "ie8";
 			if (bowser.msie && parseInt(bowser.version) == 7)
 				return "ie7";
+			if (bowser.opera && parseInt(bowser.version) >= 15)
+				return "opera15";
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -116,6 +118,10 @@ jQuery.fn.extend({
 				inx = "Look for a <span>blue bar</span> and a <span>lock</span> on the right.";
 			else if (browser == "ie7" && evIdentity)
 				inx = "Look for a <span>green bar</span> and the <span>company name</span> and a <span>lock</span> on the right.";
+			else if (browser == "opera15" && !evIdentity)
+				inx = "Look for a <span>green lock</span> and “DOMAIN” in <span>dark text</span>.";
+			else if (browser == "opera15" && evIdentity)
+				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";
 			else
 				inx = "This example is approximate. Look for a <span>lock</span> icon and “DOMAIN.”"
 

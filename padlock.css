@@ -322,3 +322,42 @@
 		padding-right: 3px;
 	}
 
+.padlock-browser-opera15 {
+	border: 1px solid #b2aeaa;
+	background-color: white;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+	.padlock-browser-opera15 .padlock-icon-container {
+		float: left;
+		padding: 4px 0 4px 4px;
+		border-right: 1px solid #cccccc;
+		margin-right: 6px;
+		color: #3d993f;
+	}
+	.padlock-browser-opera15 .padlock-icon {
+		float: left;
+		margin-right: 5px;
+		width: 14px;
+		height: 15px;
+		background-image: url(data:image/gif;base64,R0lGODlhDgAPAKUmADWFNzaGNzaHNzaHODaIODuJPD6KP0GMQkKNQ0ONRESORUOPRDuTPEaPR0aPSDyVPUChQkGhQkGiQ0GjQ1iaWUKlREKmRGqla2ulbG2mbnGpcnywfH+xgIm4io26jtjn2Nvp297r3+Lt4vH28fn8+fv9+////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAD8ALAAAAAAOAA8AAAZhQJNwSCwOP5mEQgMymkIGQaEgOIiMG4GnROoIOMZGYCQcBRzGAYFIEBQpjMcCgVg8GBQiYFKRRCISFRMARAEWh4iHAYWJiYtDho2KjJIWj0IAEJIQhEMYAAGhogAXTqYmQQA7);
+	}	
+	.padlock-browser-opera15.padlock-cert-ev .padlock-icon-identity {
+		display: block;
+		float: left;
+		padding-right: 6px;
+	}
+	.padlock-browser-opera15 .padlock-url {
+		float: left;
+		padding: 4px;
+	}
+	.padlock-browser-opera15 .padlock-url-scheme, .padlock-browser-opera15 .padlock-url-colonslashslash {
+		display: none;
+	}
+	.padlock-browser-opera15 .padlock-url-domain {
+		color: black;
+	}
+	.padlock-browser-opera15 .padlock-url-path {
+		color: #aaa;
+	}
