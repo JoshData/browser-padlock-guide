@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Browser Padlock Guide</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+          }
+          h1 {
+            margin: 0; 
+            background: black;
+            color: white;
+            padding: 10px 20px;
+          }
+          h2 {
+            margin-top: 1.5em;
+            font-size: 22px;
+          }
+          h3 {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 1em;
+          }
+          #intro {
+            margin: 2em 0;
+            font-size: 17px;
+          }
+
+          pre {
+            color: black;
+            font-size: 14px;
+          }
+
+          td {
+            font-size: 14px;
+          }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+
+        <link rel="stylesheet" href="padlock.css">
+
+        <script src="bowser.min.js"> </script>
+        <script src="padlock.js"> </script>
+    </head>
+
+    <body>
+      <h1>Browser Padlock Guide</h1>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <p id="intro">This jQuery library creates browser padlock examples so you can educate your users about how to know if their connection to your site is secure.</p>
+
+            <h3>in your &lt;head&gt;</h3>
+
+            <pre>&lt;script src="path/to/jquery/1.10.1/jquery.min.js">&lt;/script> 
+&lt;link rel="stylesheet" href="padlock.css">
+&lt;script src="bowser.min.js"> &lt;/script> &lt;!-- optional-ish -->
+&lt;script src="padlock.js"> &lt;/script></pre>
+
+            <h3>in your &lt;body&gt;</h3>
+
+            <pre>&lt;div class="padlock"> &lt;/div></pre>
+
+            <h3>at the end of your &lt;body&gt;</h3>
+
+            <pre>&lt;script>$('.padlock').padlock();&lt;/script></pre>
+
+            <h3>options</h3>
+
+            <p>You may set additional options through <code>data-</code> attributes or passing an options object like this <code>.padlock({ ... })</code>.</p>
+
+            <table class="table">
+              <thead>
+                <th>option</th>
+                <th>description</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>data-padlock-browser</code> or <br><code>{ browser: "..." }</code></td>
+                  <td><code>chrome</code> or <code>firefox</code> or <code>unknown</code>. Defaults to autodetecting your browser.</td>
+                </tr>
+                <tr>
+                  <td><code>data-padlock-domain</code> or <br><code>{ domain: "..." }</code></td>
+                  <td>The domain name to show in the address bar. Defaults to the domain name of the page.</td>
+                </tr>
+                <tr>
+                  <td><code>data-padlock-path</code> or <br><code>{ path: "..." }</code></td>
+                  <td>The path part of the URL to show in the address bar. Defaults to the path of the current page.</td>
+                </tr>
+                <tr>
+                  <td><code>data-padlock-ev-identity</code> or <br><code>{ evIdentity: "..." }</code></td>
+                  <td>Makes the padlock look as if the SSL certificate has an extended validation identity. Set this to the text to show.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>supported browsers</h3>
+
+            <p>Submit a pull request to add more!</p>
+
+          </div>
+
+          <div class="col-md-6">
+            <h3>autodetecting your browser</h3>
+            <div class="padlock"> </div>
+
+            <h3>your browser w/ ev cert</h3>
+            <div class="padlock" data-padlock-ev-identity="Example LLC [XX]"> </div>
+
+            <h3>chrome</h3>
+            <div class="padlock" data-padlock-browser="chrome"> </div>
+
+            <h3>chrome w/ ev cert</h3>
+            <div class="padlock" data-padlock-browser="chrome" data-padlock-ev-identity="Example LLC [XX]"> </div>
+
+            <h3>firefox</h3>
+            <div class="padlock" data-padlock-browser="firefox"> </div>
+
+            <h3>firefox w/ ev cert</h3>
+            <div class="padlock" data-padlock-browser="firefox" data-padlock-ev-identity="Example LLC [XX]"> </div>
+
+            <h3>unrecognized browser</h3>
+            <div class="padlock" data-padlock-browser="unknown"> </div>
+
+            <h3>unrecognized browser w/ ev cert</h3>
+            <div class="padlock" data-padlock-browser="unknown" data-padlock-ev-identity="Example LLC [XX]"> </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $('.padlock').padlock();
+      </script>
+    </body>
+</html>
