@@ -8,6 +8,8 @@ jQuery.fn.extend({
 				return "firefox32";
 			if (bowser.firefox) // actually only valid >= 8
 				return "firefox8";
+			if (bowser.msie && parseInt(bowser.version) >= 9)
+				return "ie9";
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -42,6 +44,7 @@ jQuery.fn.extend({
 			elem.html(
 				  "<div class='padlock-example'>"
 				+ "  <div class='padlock-box'>"
+			    + "    <div class='padlock-document-icon'></div>"
 			    + "    <div class='padlock-icon-container'>"
 			    + "      <div class='padlock-icon'></div>"
 			    + "      <div class='padlock-icon-identity'></div>"
@@ -86,23 +89,27 @@ jQuery.fn.extend({
 
 			var inx;
 			if (browser == "chrome35" && !evIdentity)
-				inx = "Look for a green lock and “DOMAIN” in dark text.";
+				inx = "Look for a <span>green lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "chrome35" && evIdentity)
-				inx = "Look for a green lock, the company name, and “DOMAIN” in dark text.";
+				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "firefox32" && !evIdentity)
-				inx = "Look for a lock and “DOMAIN” in dark text.";
+				inx = "Look for a <span>lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "firefox32" && evIdentity)
-				inx = "Look for a green lock, the company name, and “DOMAIN” in dark text.";
+				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "firefox8" && !evIdentity)
-				inx = "Look for “DOMAIN” in blue on the left and then again in dark text on the right.";
+				inx = "Look for “DOMAIN” in <span>blue</span> on the left and then again in <span>dark text</span> on the right.";
 			else if (browser == "firefox8" && evIdentity)
-				inx = "Look for the company name in green and “DOMAIN” in dark text.";
+				inx = "Look for the <span>company name</span> in <span>green</span> and “DOMAIN” in <span>dark text</span>.";
+			else if (browser == "ie9" && !evIdentity)
+				inx = "Look for a <span>blue bar</span>, “DOMAIN” in <span>dark text</span>, and a <span>lock</span> on the right.";
+			else if (browser == "ie9" && evIdentity)
+				inx = "Look for a <span>green bar</span>, “DOMAIN” in <span>dark text</span>, and the <span>company name</span> and a <span>lock</span> on the right.";
 			else
-				inx = "This example is approximate. Look for a lock icon and “DOMAIN.”"
+				inx = "This example is approximate. Look for a <span>lock</span> icon and “DOMAIN.”"
 
 			inx = inx.replace(/DOMAIN/, domain);
 
-			elem.find('.padlock-instructions').text(inx)
+			elem.find('.padlock-instructions').html(inx)
 
 
 		}
