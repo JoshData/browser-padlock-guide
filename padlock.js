@@ -84,7 +84,9 @@ jQuery.fn.extend({
 
 			// set classes
 
-			elem.find('.padlock-box').addClass('padlock-browser-' + browser)
+			var css_browser = browser;
+			if (css_browser == "unknown") css_browser = "chrome35";
+			elem.find('.padlock-box').addClass('padlock-browser-' + css_browser)
 			if (evIdentity) {
 				if (browser == "firefox32" || browser == "firefox8") {
 					// Expect the country code in brackets at the end, but for Firefox
