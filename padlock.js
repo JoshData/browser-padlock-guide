@@ -57,6 +57,7 @@ jQuery.fn.extend({
 			elem.html(
 				  "<div class='padlock-example'>"
 				+ "  <div class='padlock-box'>"
+				+ "  <div class='padlock-box-content'>"
 			    + "    <div class='padlock-document-icon'></div>"
 			    + "    <div class='padlock-icon-container'>"
 			    + "      <div class='padlock-icon'></div>"
@@ -69,6 +70,7 @@ jQuery.fn.extend({
 			    + "<span class='padlock-url-path'> </span>"
 			    + "    </div>"
 			    + "    <div style='clear: both'></div>"
+			    + "  </div>"
 			    + "  </div>"
 				+ "  <div class='padlock-instructions'>"
 			    + "  </div>"
