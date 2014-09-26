@@ -23,6 +23,9 @@ jQuery.fn.extend({
 			if (bowser.safari) // actually only valid for 4-5
 				return "safari5";
 
+			if (bowser.android) // tested on 4.1.2 only
+				return "android4";
+
 			return "unknown";
 			//alert(parseInt(bowser.version))
 		}
@@ -141,6 +144,9 @@ jQuery.fn.extend({
 				inx = "Look for a <span>lock</span> on the right.";
 			else if (browser == "safari5" && evIdentity)
 				inx = "Look for the <span>company name</span> and a <span>lock</span> both on the right.";
+
+			else if (browser == "android4")
+				inx = "Look for a <span>lock icon</span>.";
 
 			else
 				inx = "This example is approximate. Look for a <span>lock</span> icon and “DOMAIN.”"
