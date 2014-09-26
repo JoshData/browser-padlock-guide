@@ -168,17 +168,19 @@
 		color: #2f6600;
 	}
 
-.padlock-browser-ie9 {
+.padlock-browser-ie9, .padlock-browser-ie8 {
 	border: 1px solid #567087;
 	background-color: #d1dee9;
-	font-size: 15px;
+	font-size: 12px;
 	padding: 2px;
 	font-family: Arial, sans-serif;
 	line-height: 130%;
+	zoom: 1; /* ie7 quirk */
 }
-	.padlock-browser-ie9 .padlock-document-icon {
+	.padlock-browser-ie9 .padlock-document-icon, .padlock-browser-ie8 .padlock-document-icon {
+		zoom: 1; /* ie7 quirk */
 		float: left;
-		margin: 5px 2px 0 2px;
+		margin: 3px 2px 0 2px;
 		width: 22px;
 		height: 15px;
 		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
@@ -188,9 +190,8 @@
 	}	
 	.padlock-browser-ie9 .padlock-icon {
 		float: left;
-		margin-top: 1px;
 		width: 20px;
-		height: 22px;
+		height: 20px;
 		background-image: url(data:image/gif;base64,R0lGODlhFAAWAIQaAGhvdGpwdmtxd2xzeW92fHF4fnR7gXR8gnmAh4mSmo6Yn5OdpZSeppegqJiiqqKttaiyu6+6w77K1MDM1sLO2cXR3MnW4crX4s7c59He6f///////////////////////yH5BAEKAB8ALAAAAAAUABYAAAVhYCaOZGmeaJpJCwIAhkKp2TS8OFBUagIQEQsGcmOoCoAI6QE4qF4WEgUQeAIupMvLih1pASiHIEcGCBqmQLlcLa3Xpnc5Ls/R61s3Pk/a80d+YCVqeG0kDWNyAWg0jY4mIQA7);
 	}	
 	.padlock-browser-ie9 .padlock-icon-identity {
@@ -218,7 +219,7 @@
 	.padlock-browser-ie9.padlock-cert-ev .padlock-icon-identity {
 		display: block;
 		float: left;
-		margin-top: 2px;
+		margin-top: 3px;
 		padding-right: 3px;
 	}
 	.padlock-browser-ie9.padlock-cert-ev .padlock-icon {
@@ -226,20 +227,7 @@
 	}	
 
 .padlock-browser-ie8 {
-	border: 1px solid #6989a4;
-	background-color: #dbe5ee;
-	font-size: 15px;
-	padding: 2px;
-	font-family: Arial, sans-serif;
-	line-height: 130%;
 }
-	.padlock-browser-ie8 .padlock-document-icon {
-		float: left;
-		margin: 5px 2px 0 2px;
-		width: 22px;
-		height: 15px;
-		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
-	}	
 	.padlock-browser-ie8 .padlock-icon-container {
 		float: right;
 	}	
@@ -273,49 +261,6 @@
 		background-color: #8ed68d;
 	}
 	.padlock-browser-ie8.padlock-cert-ev .padlock-icon-identity {
-		display: block;
-		float: left;
-		margin-top: 2px;
-		padding-right: 3px;
-	}
-
-.padlock-browser-ie7 {
-	border: 1px solid #6989a4;
-	background-color: #dbe5ee;
-	font-size: 15px;
-	padding: 2px;
-	font-family: Arial, sans-serif;
-	line-height: 130%;
-}
-	.padlock-browser-ie7 .padlock-document-icon {
-		float: left;
-		margin: 5px 2px 0 2px;
-		width: 22px;
-		height: 15px;
-		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
-	}	
-	.padlock-browser-ie7 .padlock-icon-container {
-		float: right;
-	}	
-	.padlock-browser-ie7 .padlock-icon {
-		float: left;
-		margin-top: 3px;
-		margin-right: 3px;
-		width: 16px;
-		height: 18px;
-		background-image: url(data:image/gif;base64,R0lGODlhEAASAMZLAI9yRpJzRZN0RI91UqZ3AJF2U5B2Vqd4ApF3VZJ3VZJ5UZt5PZt6Q5d7UJd8TZh8Uph9WpiAVZuDXJaJWqmJR5mOX7mMFr6RG66TWMKVH8SXIaqXesaZI66ZdMeaJMmcJ8ueKdidD8yfKs2gK9GkL9KlMNSnMtaqNNerMtmsMtquOJm7hNKwTdywOtyxM8mxbOG0M+C0PuS4QuW5Q+W6ROa7Ree8Rui9R+m+SOq/SevASt3CauzBS9/Dau3CTPDFUOPHbPHGUebIY+jIY+jJZOTLcvXLVf3TXf/VX//VY//WZ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAH8ALAAAAAAQABIAAAeggH+Cg4SFhisVCQMFEyuGgisPPUU7LCEPjoYTQC8dGxguIROPEUISgxQwEI8PRAiDASkLrK6wso8NQwaDAigMhQQEDsPBBAoOAMGDOjpGPz45SjEj1DEEgyYmJSQjIC0WB+EX14LMQTw5OEnT1eR/2SIgHx4q4OLuzD43NjVI7CPWsJngwEFDhhP2DoxbpgMHjRkyjvwLKKiYxYvuHj0KBAA7);
-	}	
-	.padlock-browser-ie7 .padlock-icon-identity {
-		display: none;
-	}	
-	.padlock-browser-ie7 .padlock-url {
-		float: left;
-		padding: 3px 5px 2px 5px;
-	}
-	.padlock-browser-ie7.padlock-cert-ev {
-		background-color: #8ed68d;
-	}
-	.padlock-browser-ie7.padlock-cert-ev .padlock-icon-identity {
 		display: block;
 		float: left;
 		margin-top: 2px;
