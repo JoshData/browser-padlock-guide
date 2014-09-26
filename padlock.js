@@ -1,4 +1,4 @@
-// Turn each selected element into a padlock.
+﻿// Turn each selected element into a padlock.
 jQuery.fn.extend({
 	padlock: function(options) {
 		function detect_browser() {
@@ -61,16 +61,17 @@ jQuery.fn.extend({
 				  "<div class='padlock-example'>"
 				+ "  <div class='padlock-box'>"
 				+ "  <div class='padlock-box-content'>"
-			    + "    <div class='padlock-document-icon'></div>"
 			    + "    <div class='padlock-icon-container'>"
 			    + "      <div class='padlock-icon'></div>"
 			    + "      <div class='padlock-icon-identity'></div>"
 			    + "    </div>"
 			    + "    <div class='padlock-url'>"
+			    + "    <div class='padlock-url-content'>"
 			    + "      <span class='padlock-url-scheme'> </span>"
 			    + "<span class='padlock-url-colonslashslash'> </span>"
 			    + "<span class='padlock-url-domain'> </span>"
 			    + "<span class='padlock-url-path'> </span>"
+			    + "    </div>"
 			    + "    </div>"
 			    + "    <div style='clear: both'></div>"
 			    + "  </div>"

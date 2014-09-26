@@ -168,16 +168,9 @@
 	line-height: 130%;
 	zoom: 1; /* ie7 quirk */
 }
-	.padlock-browser-ie9 .padlock-document-icon, .padlock-browser-ie8 .padlock-document-icon {
-		zoom: 1; /* ie7 quirk */
-		float: left;
-		margin: 3px 2px 0 2px;
-		width: 22px;
-		height: 15px;
-		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
-	}	
-	.padlock-browser-ie9 .padlock-icon-container {
+	.padlock-browser-ie9 .padlock-icon-container, .padlock-browser-ie8 .padlock-icon-container {
 		float: right;
+		max-width: 33%;
 	}	
 	.padlock-browser-ie9 .padlock-icon {
 		float: left;
@@ -190,9 +183,14 @@
 	.padlock-browser-ie9 .padlock-icon-identity {
 		display: none;
 	}	
-	.padlock-browser-ie9 .padlock-url {
+	.padlock-browser-ie9 .padlock-url, .padlock-browser-ie8 .padlock-url {
 		float: left;
-		padding: 3px 5px 2px 5px;
+		width: 66%;
+		overflow: hidden;
+		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
+		background-repeat: no-repeat;
+		background-position-y: 3px;
+		padding: 3px 5px 2px 27px;
 	}
 	.padlock-browser-ie9 .padlock-url-scheme {
 		color: black;
@@ -206,18 +204,17 @@
 	.padlock-browser-ie9.padlock-cert-ev {
 		background-color: #8dd58c;
 	}
-	.padlock-browser-ie9.padlock-cert-ev .padlock-icon-identity {
+	.padlock-browser-ie9.padlock-cert-ev .padlock-icon-identity, .padlock-browser-ie8.padlock-cert-ev .padlock-icon-identity {
 		display: block;
 		float: left;
+		max-width: 70%;
+		overflow: hidden;
 		margin-top: 3px;
 		padding-right: 3px;
 	}
 
 .padlock-browser-ie8 {
 }
-	.padlock-browser-ie8 .padlock-icon-container {
-		float: right;
-	}	
 	.padlock-browser-ie8 .padlock-icon {
 		float: left;
 		margin-top: 1px;
@@ -229,9 +226,8 @@
 	.padlock-browser-ie8 .padlock-icon-identity {
 		display: none;
 	}	
-	.padlock-browser-ie8 .padlock-url {
-		float: left;
-		padding: 3px 5px 2px 5px;
+	.padlock-browser-ie8 .padlock-url-content {
+		width: 1000px;
 	}
 	.padlock-browser-ie8 .padlock-url-scheme {
 		color: black;
@@ -244,12 +240,6 @@
 	}
 	.padlock-browser-ie8.padlock-cert-ev {
 		background-color: #8ed68d;
-	}
-	.padlock-browser-ie8.padlock-cert-ev .padlock-icon-identity {
-		display: block;
-		float: left;
-		margin-top: 2px;
-		padding-right: 3px;
 	}
 
 .padlock-browser-opera15 {
@@ -300,15 +290,9 @@
 	font-family: Arial, sans-serif;
 	line-height: 130%;
 }
-	.padlock-browser-safari5 .padlock-document-icon {
-		float: left;
-		margin: 5px 2px 0 2px;
-		width: 22px;
-		height: 15px;
-		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
-	}	
 	.padlock-browser-safari5 .padlock-icon-container {
 		float: right;
+		width: 33%;
 	}	
 	.padlock-browser-safari5 .padlock-icon {
 		float: right;
@@ -323,7 +307,11 @@
 	}	
 	.padlock-browser-safari5 .padlock-url {
 		float: left;
-		padding: 3px 5px 2px 5px;
+		width: 66%;
+		background-image: url(data:image/gif;base64,R0lGODlhFgAPAOMOAC4AAQANHwANIwAMLUYXAF4gAGQmAG8qAABCiQBGlXk0AABIqIxNAFhYWP///////yH5BAEKAA8ALAAAAAAWAA8AAAQx8MlJq704V9V611XhjQn4MGNqGmn7XYDrXrI7UEftBpS+976UABj0LCiEYgdhajoxEQA7);
+		background-repeat: no-repeat;
+		background-position-y: 4px;
+		padding: 3px 5px 2px 27px;
 	}
 	.padlock-browser-safari5.padlock-cert-ev .padlock-icon-identity {
 		display: block;
