@@ -249,6 +249,10 @@
 	font-family: Arial, sans-serif;
 	line-height: 130%;
 }
+	/* clip */
+	.padlock-box.padlock-browser-opera15 { overflow: hidden; }
+	.padlock-box.padlock-browser-opera15 .padlock-box-content { width: 2000px; }
+
 	.padlock-browser-opera15 .padlock-icon-container {
 		float: left;
 		padding: 4px 0 4px 4px;
@@ -292,7 +296,7 @@
 }
 	.padlock-browser-safari5 .padlock-icon-container {
 		float: right;
-		width: 33%;
+		max-width: 33%;
 	}	
 	.padlock-browser-safari5 .padlock-icon {
 		float: right;
@@ -312,10 +316,15 @@
 		background-repeat: no-repeat;
 		background-position-y: 4px;
 		padding: 3px 5px 2px 27px;
+		overflow: hidden;
+	}
+	.padlock-browser-safari5 .padlock-url-content {
+		width: 1000px;
 	}
 	.padlock-browser-safari5.padlock-cert-ev .padlock-icon-identity {
 		display: block;
 		float: left;
+		max-width: 70%;
 		margin-top: 2px;
 		padding-right: 3px;
 		color: #006318;
