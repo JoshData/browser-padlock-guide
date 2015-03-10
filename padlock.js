@@ -2,7 +2,9 @@
 jQuery.fn.extend({
 	padlock: function(options) {
 		function detect_browser() {
-			if (bowser.chrome)
+			if (bowser.chrome && bowser.android)
+				return "mobilechrome40";
+			if (bowser.chrome && parseInt(bowser.version) >= 11)
 				return "chrome35";
 
 			if (bowser.firefox && parseInt(bowser.version) >= 14)
@@ -109,7 +111,7 @@ jQuery.fn.extend({
 			// instructions
 
 			var inx;
-			if (browser == "chrome35" && !evIdentity)
+			if ((browser == "chrome35" && !evIdentity) || browser == "mobilechrome40")
 				inx = "Look for a <span>green lock</span> and “DOMAIN” in <span>dark text</span>.";
 			else if (browser == "chrome35" && evIdentity)
 				inx = "Look for a <span>green lock</span>, the <span>company name</span>, and “DOMAIN” in <span>dark text</span>.";

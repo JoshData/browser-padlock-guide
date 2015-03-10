@@ -65,6 +65,44 @@
 		float: left;
 	}
 
+.padlock-browser-mobilechrome40 {
+	border: 1px solid #c8c8c8;
+	border-radius: 2px;
+	background-color: white;
+	padding: 1px;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+
+	/* clip */
+	.padlock-box.padlock-browser-mobilechrome40 { overflow: hidden; }
+	.padlock-box.padlock-browser-mobilechrome40 .padlock-box-content { width: 2000px; }
+
+	.padlock-browser-mobilechrome40 .padlock-url {
+		padding: 3px 3px 1px 3px;
+	}
+	.padlock-browser-mobilechrome40 .padlock-icon {
+		float: left;
+		margin: 1px 5px 0 3px;
+		width: 18px;
+		height: 18px;
+		background-image: url(data:image/gif;base64,R0lGODlhEgASAKU5AAy+FA2+FA2+FQ6/Fg+/FxG/GRK/GhDAGRHAGRLAGhTAHBXAHRXBHRXBHhbBHhfBHxnCIRrCIiHEKSnGMSvGMzzLQknOUE3PVE3QVE7QVWHUZ2LVaGPVaWfXbZ/loqDlo6norarorazpr63pr63psK7psK7psa/psbDpsrztvr3tv7/uwcDuwsHuw8vwzc3xz9Hz09Lz1Nj02dz13eL34uL34+X45uj46f/+/////////////////////////////yH+EUNyZWF0ZWQgd2l0aCBHSU1QACwAAAAAEgASAAAGlMBcq0QsGo0s4SLCbDqdC5XpSX2GSk8I5oTKQJ6gkRNiyX08ucu3CcI2GbKNo6GZOZwgkfORq0gkFTkPeG4RBDY5iYo3B2x6TACKMTCKA2yFkYkGBTiJlkwgJE2ZORQTlZejih0cqKCPEaQ1NK4ReU0ILoqKLwmOTgkBAsMCAb6/VckgK0vJTwoqOSohINXW19YpOUEAOw==);
+	}	
+	.padlock-browser-mobilechrome40 .padlock-url-scheme {
+		color: #1cc224;
+	}
+	.padlock-browser-mobilechrome40 .padlock-url-colonslashslash, .padlock-browser-mobilechrome40 .padlock-url-path {
+		color: #c0c0c0;
+	}
+	.padlock-browser-mobilechrome40 .padlock-url-domain {
+		color: black;
+	}
+	.padlock-browser-mobilechrome40.padlock-cert-ev .padlock-icon-container {
+	}
+	.padlock-browser-mobilechrome40.padlock-cert-ev .padlock-icon-identity {
+	}
+
 .padlock-browser-firefox32 {
 	border: 1px solid #b2aeaa;
 	background-color: white;
